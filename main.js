@@ -1,7 +1,7 @@
 new Vue({
   el: "#app",
   data: {
-    appName: "VueJS Calculator",
+    appName: "Vue-JS Calculator",
     values: [],
     result: "",
     store: [],

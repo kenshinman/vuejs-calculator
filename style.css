@@ -11,6 +11,8 @@ body{
 .app-name {
   text-align: center;
   color: #fff;
+  font-family: digital;
+  font-weight: 200
 }
 .container {
   max-width: 500px;
