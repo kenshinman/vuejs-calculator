@@ -1,0 +1,74 @@
+@font-face{
+    font-family: digital;
+    src: url(digital-7.ttf);
+}
+
+.app-name{
+    text-align: center;
+}
+.container {
+  max-width: 500px;
+  border: 1px solid #f3f3f3;
+  margin: 50px auto;
+}
+
+.calculator {
+    width: 250px;
+    margin: 0 auto
+}
+.top-section{
+    padding: 10px
+}
+.screen{
+    height: 60px;
+    border: 1px solid grey;
+    font-family: digital;
+    font-size: 22px;
+    text-align: right;
+    padding:0 10px;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /*grid-gap: 10px;*/
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.top, .mid, .bottom {
+    /*border: 1px solid grey*/
+}
+
+.buttons .main{
+    /*background-color: green;*/
+    display: grid;
+    grid-template-rows: 1fr 1.8fr 4fr;
+    grid-gap: 10px;
+}
+
+.main .bottom, .main .mid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 5px
+}
+
+.side{
+    /*background-color: red;*/
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+    padding: 5px;
+    grid-gap: 10px;
+}
+ /***
+
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+}
+
+ ****/

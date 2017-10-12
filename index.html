@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator" id="app">
+            <h2 class="app-name"> {{appName}} </h2>
+            <div class="top-section">
+                <div class="screen">
+                    <p class="digits">{{values.join("")}}</p>
+                </div>
+
+            </div>
+            <div class="bottom-section">
+                <div class="buttons">
+                    <div class="main">
+                        <div class="top"><button class="btn btn-value" v-on:click="clear">CE/C</button></div>
+                        <div class="mid">
+                                <button class="btn btn-value" v-on:click="press">&#8730;</button>
+                                <button class="btn btn-value" v-on:click="press">+|-</button>
+                                <button class="btn btn-value" v-on:click="press">%</button>
+                                <button class="btn btn-value" v-on:click="press">mrc</button>
+                                <button class="btn btn-value" v-on:click="press">m-</button>
+                                <button class="btn btn-value" v-on:click="press">m+</button>
+                        </div>
+                        <div class="bottom">
+                            <button class="btn btn-value" v-on:click="press">7</button>
+                            <button class="btn btn-value" v-on:click="press">8</button>
+                            <button class="btn btn-value" v-on:click="press">9</button>
+                            <button class="btn btn-value" v-on:click="press">4</button>
+                            <button class="btn btn-value" v-on:click="press">5</button>
+                            <button class="btn btn-value" v-on:click="press">6</button>
+                            <button class="btn btn-value" v-on:click="press">1</button>
+                            <button class="btn btn-value" v-on:click="press">2</button>
+                            <button class="btn btn-value" v-on:click="press">3</button>
+                            <button class="btn btn-value" v-on:click="press">0</button>
+                            <button class="btn btn-value" v-on:click="press">.</button>
+                            <button class="btn btn-value" v-on:click="">=</button>
+                        </div>
+                    </div>
+                    <div class="side">
+                            <button class="btn btn-value" v-on:click="">Off</button>
+                            <button class="btn btn-value" v-on:click="">&divide;</button>
+                            <button class="btn btn-value" v-on:click="">&times;</button>
+                            <button class="btn btn-value" v-on:click="">&minus;</button>
+                            <button class="btn btn-value" v-on:click="">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vue.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
