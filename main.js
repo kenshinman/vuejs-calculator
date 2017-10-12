@@ -24,6 +24,10 @@ new Vue({
       }
       console.log(this.store);
     },
+    off: function(){
+        this.clear();
+        this.values = []
+    },
     pushToStore: function() {
       let vals = document.getElementById("values").innerHTML;
       if (vals.length > 0) {
@@ -107,16 +111,15 @@ new Vue({
       console.log(this.store);
     },
     plusMinus() {
-      let screenVal = document.getElementById("values").innerText;
-      if (this.values[0] != 0) {
-        this.values.unshift("-");
-      } else if (this.values[0] === "-") {
+      if (this.values[0] == "-") {
         this.values.shift();
+      } else if (this.values[0] != 0) {
+        this.values.unshift("-");
       } else {
         this.values[0] = "-";
       }
-      console.log(this.values);
-      console.log(this.values[0]);
+    //   console.log(this.values);
+    //   console.log(this.values[0]);
     }
   },
   mounted: function() {
